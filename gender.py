@@ -31,9 +31,14 @@ prediction3 = clf3.predict(_X)
 
 
 #results 
-r1 = accuracy_score(_Y,prediction1)
+# accuracy_score imported from sklearn.metrics 
+r1 = accuracy_score(_Y,prediction1)   
 r2 = accuracy_score(_Y,prediction2)
 r3 = accuracy_score(_Y,prediction3)
+
+# print("r1: ",r1)  // it wil print r1:  0.625
+# print("r2: ",r2)		r2:  0.875 
+# print("r3: ",r3)		r3:  1.0				
 
 #print best result
 if r1 > r2 and r1 > r3:
